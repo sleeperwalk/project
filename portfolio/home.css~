@@ -1,0 +1,36 @@
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* navigation bar css*/
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.nav-li {
+    float: left; 
+}
+
+.nav-item {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #00000d;
+    font-size: 20px;
+    color: white; 
+    text-decoration: none;
+ }
+
+
+
+.nav-item:hover {
+    background-color: #111;
+}
+
+/* end */
