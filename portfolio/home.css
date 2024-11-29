@@ -14,16 +14,10 @@ body{
 }
 
 
-#first {
-		animation-name: fade-out;
-		animation-timeline: view(
-				cover 0%, 
-        contain 100% );
-}
-
 @keyframes fade-in{
-    from {scale: .8; opacity: 0;}
-    to {scale: 1; opacity: 1;}
+    0%{scale: .8; opacity: 0;}
+    50%{scale: 1; opacity: 1;}
+		100%{scale: 1; opacity: 1;}
 }
 
 @keyframes left{
@@ -31,7 +25,6 @@ body{
 }
 
 .about {
-		
 		animation-name: fade-in;
 		animation-timeline: view();
 }
@@ -40,19 +33,24 @@ body{
 /* navigation bar css*/
 .navbar {
     top: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 20px; 
 }
 
 .navbar ul {
     list-style-type: none; 
     background-color: #313244;
-    padding: 10px; /* Adjusted padding for better alignment */
-    margin: 0px;
+    padding: 10px; 
+    margin: 0;
     overflow: hidden;
     border-radius: 20px;
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Add space between items */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-grow: 1; 
 }
 
 .navbar a {
@@ -71,18 +69,24 @@ body{
 }
 
 .navbar li {
-    display: flex; /* Ensure `li` content is properly aligned */
-    align-items: center; /* Center-align the content within each `li` */
+    display: flex; 
+    align-items: center; 
+}
+
+#logo {
 }
 
 .navbar img {
     border-radius: 100px;
     width: 50px;
     height: 50px;
-    margin-left: 20px;
-    margin-top: 5px;
     border-color: #fff;
     border: 2px solid black;
+    margin: 0; 
+}
+
+.navbar {
+
 }
 
 /* end */

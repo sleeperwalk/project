@@ -1,89 +1,170 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League Spartan">
-    <link rel = "stylesheet" href = "nc.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+    background: linear-gradient(to left, #7f849c, #11111b);
+}
 
+@keyframes fade-out {
+    from { scale: .8; opacity: 1; }
+    to { scale: 1; opacity: 0; }
+}
+
+@keyframes fade-in {
+    from { scale: .8; opacity: 0; }
+    to { scale: 1; opacity: 1; }
+}
+
+@keyframes left {
+    from { transform: translateX(100px); }
+}
+
+/* navigation bar css */
+.navbar {
+    top: 0;
+    display: flex; /* Use Flexbox for the navbar container */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items: logo on the left, links centered */
+    padding: 0 20px; /* Add horizontal padding for spacing */
+}
+
+.navbar ul {
+    list-style-type: none; 
+    background-color: #313244;
+    padding: 10px; /* Adjusted padding for better alignment */
+    margin: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; /* Add space between items */
+    flex-grow: 1; /* Allow the `ul` to take up remaining space */
+}
+
+.navbar a {
+    color: #cdd6f4;
+    text-decoration: none;
+    padding: 20px; 
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #45475a;
+    border-radius: 50px; 
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li {
+    display: flex; /* Ensure `li` content is properly aligned */
+    align-items: center; /* Center-align the content within each `li` */
+}
+
+#logo {
+	align-items: left; 	
+}
+
+.navbar img {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    border-color: #fff;
+    border: 2px solid black;
+    margin: 0; 
+}
+
+.navbar {
+
+}
+
+/* end */
+
+/* blog select */ 
+
+.main {
+    margin-top: 3%; 
+}
+
+.bs {
+    width: 50%;
+    height: auto; 
+    margin: 0 auto 50px; 
+    border: 5px solid #babbf1;
+    border-radius: 5%; 
+    background-image: linear-gradient(#303446, #51576d);
+  transition: all 0.3s ease;
+
+}
+
+
+.bs:hover {
+    transform: scale(1.05); /* Slightly enlarge the div */
+}
+
+.bs h1 {
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif; 
+}
+
+.bs a {
+	text-decoration: none; 
+	color: green; 
+}
+
+.bs p {
+    text-align: center; 
+    font-family: "Roboto Mono", sans-serif; 
+}
+
+
+@media (max-width: 1200px) {
+    .bs {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .bs {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 15px; 
+    }
+
+    .navbar img {
+        width: 40px; 
+        height: 40px; 
+    }
     
-    <title>Portfolio</title>
-    
-  </head>
-<body>
+    .bs {
+        width: 90%; 
+    }
+}
 
-  
-  <!-- Navigation bar -->
-  <nav class="navbar">
-    <ul>
-		<li id="logo">  <a href="home.html"> <img src="images/nice.gif"> </a></li>
-    <li> <a href=""> Creative </a></li>
-    <li> <a href=""> Non-creative </a></li>
-    </ul>
-   </nav>
-	
- 
-	<div class="main"> 
+@media (max-width: 576px) {
+    .navbar ul {
+        padding: 5px; 
+    }
 
-	<div class="bs"> 
+    .navbar a {
+        padding: 10px; 
+    }
 
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
-
-
-	<div class="bs"> 
-
-		<a href = ""> <h1> title </h1> </a> 
-		<p> a simple intro about the blog you know whats up</p>
-	</div>
+    .bs {
+        width: 95%; 
+    }
+}
 
 
 
-	</div>
- 
 
-			
- 
-
-
-
-<address>
-<a href="mailto:climber@climber"></a>
-</address>
-</body>
-</html>
