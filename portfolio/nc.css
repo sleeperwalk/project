@@ -27,14 +27,14 @@ body {
 .navbar ul {
     list-style-type: none;
     background-color: #313244;
-    padding: 10px; /* Adjusted padding for better alignment */
+    padding: 10px; 
     margin: 0px;
     overflow: hidden;
     border-radius: 20px;
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Add space between items */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 .navbar a {
@@ -53,8 +53,8 @@ body {
 }
 
 .navbar li {
-    display: flex; /* Ensure `li` content is properly aligned */
-    align-items: center; /* Center-align the content within each `li` */
+    display: flex; 
+    align-items: center; 
 }
 
 .navbar img {
@@ -77,11 +77,18 @@ body {
 
 .bs {
     width: 50%;
-    height: auto; /* Changed to auto for better responsiveness */
-    margin: 0 auto 50px; /* Centers horizontally and adds bottom spacing */
+    height: auto; 
+    margin: 0 auto 50px; 
     border: 5px solid #babbf1;
     border-radius: 5%; 
     background-image: linear-gradient(#303446, #51576d);
+  transition: all 0.3s ease;
+
+}
+
+
+.bs:hover {
+    transform: scale(1.05); /* Slightly enlarge the div */
 }
 
 .bs h1 {
@@ -94,50 +101,50 @@ body {
     font-family: "Roboto Mono", sans-serif; 
 }
 
-/* Responsive styles */
+
 @media (max-width: 1200px) {
     .bs {
-        width: 70%; /* Increase width on medium screens */
+        width: 70%; 
     }
 }
 
 @media (max-width: 992px) {
     .navbar ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Adjust gap for vertical stacking */
+        flex-direction: column; 
+        gap: 10px; 
     }
 
     .bs {
-        width: 80%; /* Further increase width on smaller screens */
+        width: 80%; 
     }
 }
 
 @media (max-width: 768px) {
     .navbar a {
-        padding: 15px; /* Reduce padding on smaller screens */
+        padding: 15px; 
     }
 
     .navbar img {
-        width: 40px; /* Reduce image size */
-        height: 40px; /* Reduce image size */
+        width: 40px; 
+        height: 40px; 
     }
     
     .bs {
-        width: 90%; /* Make it even wider on small screens */
+        width: 90%; 
     }
 }
 
 @media (max-width: 576px) {
     .navbar ul {
-        padding: 5px; /* Reduce padding for very small screens */
+        padding: 5px; 
     }
 
     .navbar a {
-        padding: 10px; /* Further reduce padding */
+        padding: 10px; 
     }
 
     .bs {
-        width: 95%; /* Almost full width on very small screens */
+        width: 95%; 
     }
 }
 
