@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background: linear-gradient(to left, #7f849c, #11111b);
+}
+
+@keyframes fade-out {
+    from { scale: .8; opacity: 1; }
+    to { scale: 1; opacity: 0; }
+}
+
+@keyframes fade-in {
+    from { scale: .8; opacity: 0; }
+    to { scale: 1; opacity: 1; }
+}
+
+@keyframes left {
+    from { transform: translateX(100px); }
+}
+
+/* navigation bar css */
+.navbar {
+    top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #313244;
+    padding: 10px; /* Adjusted padding for better alignment */
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
+}
+
+.navbar a {
+    color: #cdd6f4;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #45475a;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li {
+    display: flex; /* Ensure `li` content is properly aligned */
+    align-items: center; /* Center-align the content within each `li` */
+}
+
+.navbar img {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-color: #fff;
+    border: 2px solid black;
+}
+
+/* end */
+
+/* blog select */ 
+
+.main {
+    margin-top: 3%; 
+}
+
+.bs {
+    width: 50%;
+    height: auto; /* Changed to auto for better responsiveness */
+    margin: 0 auto 50px; /* Centers horizontally and adds bottom spacing */
+    border: 5px solid #babbf1;
+    border-radius: 5%; 
+    background-image: linear-gradient(#303446, #51576d);
+}
+
+.bs h1 {
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif; 
+}
+
+.bs p {
+    text-align: center; 
+    font-family: "Roboto Mono", sans-serif; 
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .bs {
+        width: 70%; /* Increase width on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust gap for vertical stacking */
+    }
+
+    .bs {
+        width: 80%; /* Further increase width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .navbar img {
+        width: 40px; /* Reduce image size */
+        height: 40px; /* Reduce image size */
+    }
+    
+    .bs {
+        width: 90%; /* Make it even wider on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar ul {
+        padding: 5px; /* Reduce padding for very small screens */
+    }
+
+    .navbar a {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .bs {
+        width: 95%; /* Almost full width on very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
