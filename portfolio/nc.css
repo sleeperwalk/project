@@ -19,18 +19,19 @@ body {
     from { transform: translateX(100px); }
 }
 
-/* navigation bar css */
+
+/* navigation bar css*/
 .navbar {
     top: 0;
     display: flex; 
     align-items: center; 
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 0 20px; 
 }
 
 .navbar ul {
     list-style-type: none; 
-    background-color: #313244;
+   background-color: #313244;
     border: 2px solid #babbf1;
     padding: 10px; 
     margin: 0;
@@ -49,6 +50,7 @@ body {
     padding: 20px; 
     display: block;
     text-align: center;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -64,13 +66,12 @@ body {
 }
 
 #logo {
-	align-items: left; 	
 }
 
 .navbar img {
     border-radius: 100px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-color: #fff;
     border: 2px solid black;
     margin: 0; 
@@ -81,7 +82,6 @@ body {
 }
 
 /* end */
-
 /* blog select */ 
 
 .main {
