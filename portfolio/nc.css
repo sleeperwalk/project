@@ -22,24 +22,25 @@ body {
 /* navigation bar css */
 .navbar {
     top: 0;
-    display: flex; /* Use Flexbox for the navbar container */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space out items: logo on the left, links centered */
-    padding: 0 20px; /* Add horizontal padding for spacing */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 20px; 
 }
 
 .navbar ul {
     list-style-type: none; 
     background-color: #313244;
-    padding: 10px; /* Adjusted padding for better alignment */
+    border: 2px solid #babbf1;
+    padding: 10px; 
     margin: 0;
     overflow: hidden;
     border-radius: 20px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    gap: 20px; /* Add space between items */
-    flex-grow: 1; /* Allow the `ul` to take up remaining space */
+    gap: 20px; 
+    flex-grow: 1; 
 }
 
 .navbar a {
@@ -58,8 +59,8 @@ body {
 }
 
 .navbar li {
-    display: flex; /* Ensure `li` content is properly aligned */
-    align-items: center; /* Center-align the content within each `li` */
+    display: flex; 
+    align-items: center; 
 }
 
 #logo {
@@ -91,7 +92,7 @@ body {
     width: 50%;
     height: auto; 
     margin: 0 auto 50px; 
-    border: 5px solid #babbf1;
+    border: 2px solid #babbf1;
     border-radius: 5%; 
     background-image: linear-gradient(#303446, #51576d);
   transition: all 0.3s ease;
